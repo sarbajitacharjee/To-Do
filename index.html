@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="todobar"><b>Your Personal Todo List &#9997;</b> </div>
+    <div class="box">
+        <div class="container">
+            <h1 class="details">Total <span id="total"></span>, Completed <span id="Completed"></span> , Left <span id="left"></span></h1>
+
+            <h1>👨‍💻Add Your Todo List  here ....</h1>
+            <input type="text" placeholder="e.g. Science Project Assignment" class="input-box" id="textinput">
+            <input type="date" class="dateandtime" id="dateinput">
+            <button id="btn" onclick="add()">ADD TASK</button>
+        </div>
+    
+        <div class="card" id="card">
+            <h1>Keep it checked After Complete 😉 </h1>
+        </div>
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>
