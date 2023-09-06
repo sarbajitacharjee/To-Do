@@ -23,6 +23,10 @@ add=()=>
 
 
     const card = document.getElementById('card');
+    const cards=document.createElement('div')
+    cards.id='deletename';
+    card.appendChild(cards)
+  
 
     // Create the checkbox
     const checkbox = document.createElement('input');
@@ -31,9 +35,9 @@ add=()=>
     checkbox.onclick = comp;
 
     // Create the text
-    const text = document.createElement('div');
+    const text = document.createElement('h1');
     text.className = 'text';
-    text.innerText = task.value;
+    text.innerHTML = task.value ;
 
     // Create the flex-card container
     const flexCard = document.createElement('div');
@@ -42,14 +46,27 @@ add=()=>
     flexCard.appendChild(text);
 
     // Create the datetime
-    const datetime = document.createElement('div');
+    const datetime = document.createElement('h3');
     datetime.className = 'datetime';
-    datetime.innerText = date.value;
+    datetime.innerHTML = date.value + '<div onclick="func()">🗑️</div>';
 
-    // Append the flex-card and datetime to the card container
-    card.appendChild(flexCard);
-    card.appendChild(datetime);
+    // Append the flex-card and datetime to the cards container
+    cards.appendChild(flexCard);
+    cards.appendChild(datetime);
 }
+
+//Delete
+function func(){
+
+  const divToRemove = document.getElementById('deletename');
+
+if (divToRemove) {
+    divToRemove.remove(); // This removes the div from the DOM
+}
+
+}
+
+
 
 //To Calculate
 

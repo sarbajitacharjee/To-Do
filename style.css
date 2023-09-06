@@ -95,3 +95,11 @@ input:focus{
     display: flex;
     gap: 300px;
 }
+
+.datetime{
+    display: flex;
+    justify-content: space-between;
+}
+.card >p{
+color: red;
+}
