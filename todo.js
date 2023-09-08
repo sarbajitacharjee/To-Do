@@ -64,6 +64,12 @@ if (divToRemove) {
     divToRemove.remove(); // This removes the div from the DOM
 }
 
+// completed--;
+left--;
+total--;
+document.getElementById('total').innerText=total
+// document.getElementById('Completed').innerText=completed
+document.getElementById('left').innerText=total
 }
 
 
