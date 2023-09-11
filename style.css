@@ -23,9 +23,9 @@ body{
     width: 500px;
     height: 200px;
     font-style:italic; 
-z-index: 0;
-position: sticky;
-top:170px;
+    z-index: 0;
+    position: sticky;
+    top:170px;
     /* background-color: rgba(250, 235, 215, 0.445); */
     
 }

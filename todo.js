@@ -37,6 +37,7 @@ add=()=>
     // Create the text
     const text = document.createElement('h1');
     text.className = 'text';
+    text.id = 'text';
     text.innerHTML = task.value ;
 
     // Create the flex-card container
@@ -69,7 +70,7 @@ left--;
 total--;
 document.getElementById('total').innerText=total
 // document.getElementById('Completed').innerText=completed
-document.getElementById('left').innerText=total
+document.getElementById('left').innerText=total;
 }
 
 
@@ -86,6 +87,12 @@ function comp() {
     checkboxes.forEach(function(checkbox) {
       if (checkbox.checked) {
         completed++;
+        document.getElementById('text').style.color="green"
+      }
+      else{
+        document.getElementById('text').style.color="red"
+        // alert("you have unchecked your task")
+
       }
     });
 
